@@ -1,10 +1,14 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Hero from '../components/Hero'
+import Feature from '../components/ThreeColumnGrid'
 
 export default function Home() {
   return (
-    <Hero/>
+    <>
+      <Hero/>
+      <Feature />
+    </>
     // <main className={styles.main}>
     //   <div className={styles.description}>
     //     <p>

@@ -293,7 +293,12 @@ export default function Multistep() {
   const [progress, setProgress] = useState(33.33)
 
   return (
-    <>
+    <Flex
+        justifyContent="center" // Center horizontally
+        alignItems="center" // Center vertically
+        height="600px" // Take full view height
+        m={10}
+      >
       <Box
         borderWidth="1px"
         rounded="lg"
@@ -302,7 +307,6 @@ export default function Multistep() {
         width="100%" // Add a fixed width if needed
         height="600px" // Set a fixed height
         p={6}
-        m="60px"
         as="form">
         <Flex direction="column" height="100%">
             <Progress hasStripe colorScheme='pink' value={progress} mb="5%" mx="5%" isAnimated></Progress>
@@ -366,6 +370,6 @@ export default function Multistep() {
             </ButtonGroup>
         </Flex>
       </Box>
-    </>
+    </Flex>
   )
 }

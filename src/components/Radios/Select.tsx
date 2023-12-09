@@ -145,7 +145,7 @@ export default function Select() {
   
     return (
         <Box {...getRootProps()} width="100%" mt={10}>
-            <Title />
+            <Title title="Which option do you pick? (Select one)"/>
             <Grid templateColumns="repeat(2, 1fr)" gap={6} justifyContent="center" alignItems="center">
                 {/* <Heading fontFamily="Visby Round CF" size='md' textColor={getColor('agree')}>Agree</Heading> */}
                 {OPTIONS.map((option) => {

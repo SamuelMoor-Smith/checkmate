@@ -1,7 +1,7 @@
 // Title.tsx
 import { Heading } from '@chakra-ui/react';
 
-const Title = () => {
+const Title = (props: any) => {
   return (
     <Heading
       as="h2"
@@ -11,7 +11,7 @@ const Title = () => {
       color="gray.600" // Adjust the color as needed
       mb={4} // Margin bottom for spacing
     >
-      How much do you agree with this statement?
+      {props.title}
     </Heading>
   );
 };
