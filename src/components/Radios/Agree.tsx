@@ -97,7 +97,7 @@ export default function Agree() {
     return (
         <Box {...getRootProps()} width="100%" mt={10}>
             <Title title="How much do you agree with this statement?"/>
-            <Stack {...getRootProps()} spacing={{ base: 1, sm: 2,  md: 4 }} justifyContent="center" alignItems="center" direction='row'>
+            <Stack {...getRootProps()} spacing={{ base: 1, sm: 1.5, md: 4 }} justifyContent="center" alignItems="center" direction='row'>
                 <Heading fontFamily="Visby Round CF" size={{ base: 'sm', md: 'md' }} textColor={getColor('agree')}>Agree</Heading>
                 {OPTIONS.map((option) => {
                 return (
