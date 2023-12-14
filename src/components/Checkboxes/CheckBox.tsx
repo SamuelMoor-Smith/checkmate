@@ -104,7 +104,7 @@ export default function SelectCheckbox() {
                     alignItems="center"
                     color={getColor(props.value)} 
                     m={2}
-                    ml={6}
+                    // ml={6}
                     bg={getBg(props.value)} 
                     borderRadius="full"
                     height='40px'

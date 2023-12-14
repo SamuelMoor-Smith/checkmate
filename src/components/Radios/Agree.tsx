@@ -23,13 +23,13 @@ const OPTIONS = [
 function getSize(size: string) {
     switch (size) {
         case 'xl':
-            return {'base': 10, 'md': 12};
+            return {'base': 4, 'sm': 10, 'md': 12};
         case 'lg':
-            return {'base': 8, 'md': 10};
+            return {'base': 4, 'sm': 8, 'md': 10};
         case 'md':
-            return {'base': 6, 'md': 8};
+            return {'base': 4, 'sm': 6, 'md': 8};
         case 'sm':
-            return {'base': 4, 'md': 6};
+            return {'base': 4, 'sm': 4, 'md': 6};
         default:
             throw new Error('Invalid size');
     }
@@ -97,7 +97,7 @@ export default function Agree() {
     return (
         <Box {...getRootProps()} width="100%" mt={10}>
             <Title title="How much do you agree with this statement?"/>
-            <Stack {...getRootProps()} spacing={{ base: 1, md: 4 }} justifyContent="center" alignItems="center" direction='row'>
+            <Stack {...getRootProps()} spacing={{ base: 1, sm: 2,  md: 4 }} justifyContent="center" alignItems="center" direction='row'>
                 <Heading fontFamily="Visby Round CF" size={{ base: 'sm', md: 'md' }} textColor={getColor('agree')}>Agree</Heading>
                 {OPTIONS.map((option) => {
                 return (
