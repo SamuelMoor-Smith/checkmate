@@ -36,21 +36,21 @@ export default function SimpleThreeColumns() {
     <Box p={20} bg="#F7FCF5">
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
-          icon={<Image src="images/computer_icon.png" boxSize="20" />}
+          icon={<Image src="images/computer_icon.png" boxSize="20" alt={"Computer Icon"} />}
           title={'Take the Quiz'}
           text={
             'Participants register with their ETH/UZH email and take the 10 minute quiz'
           }
         />
         <Feature
-          icon={<Image src="images/mirror_icon.png" boxSize="20" />}
+          icon={<Image src="images/mirror_icon.png" boxSize="20" alt={"Mirror Icon"}/>}
           title={'Get a Match'}
           text={
             'Participants are matched based on their compatibility'
           }
         />
         <Feature
-          icon={<Image src="images/meet_icon.png" boxSize="20" />}
+          icon={<Image src="images/meet_icon.png" boxSize="20"alt={"Meet Icon"}/>}
           title={'Meet'}
           text={
             'Matches can meet for the first time at the Checkmaté event'
